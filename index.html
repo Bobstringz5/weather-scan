@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./media/icon.jpg">
+    <title>Weather App</title>
+</head>
+<body class="bg-[url(./media/weather.jpg)] bg-no-repeat bg-cover flex items-center justify-center w-full max-w-screen-md mx-auto h-auto min-h-screen">
+    <div class="bg-white p-8 rounded-xl shadow-md w-80 text-center">
+        <h1 class="text-xl font-bold md-4">Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city" class="border p-2 w-full mb-4 rounded">
+        <button onclick="getWeather()" class="bg-blue-700 text-white px-4 py-2 rounded">Get Weather</button>
+        <div id="weatherResult" class="mt-4 text-gray-700"></div>
+    </div>
+
+ <script src="index.js"></script>   
+</body>
+</html>
